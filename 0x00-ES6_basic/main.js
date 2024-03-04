@@ -1,3 +1,5 @@
-import { taskFirst, taskNext } from './0-constants.js';
+import getNeighborhoodsList from './2-arrow.js';
 
-console.log(`${taskFirst()} ${taskNext()}`);
+const neighborhoodsList = new getNeighborhoodsList();
+const res = neighborhoodsList.addNeighborhood('Noe Valley');
+console.log(res)
