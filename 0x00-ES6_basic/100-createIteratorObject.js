@@ -10,10 +10,10 @@ export default function createIteratorObject(report) {
       }
 
       const department = departments[currentDepartmentIndex];
-      const employee = department[currentEmployeeIndex++];
+      const employee = department[currentEmployeeIndex += 1];
 
       if (currentEmployeeIndex >= department.length) {
-        currentDepartmentIndex++;
+        currentDepartmentIndex += 1;
         currentEmployeeIndex = 0;
       }
 
@@ -21,6 +21,6 @@ export default function createIteratorObject(report) {
     },
     [Symbol.iterator]() {
       return this;
-    }
+    },
   };
 }
