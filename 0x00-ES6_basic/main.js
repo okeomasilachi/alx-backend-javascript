@@ -1,4 +1,3 @@
-import taskBlock from './1-block-scoped.js';
+import getBudgetObject from './7-getBudgetObject.js';
 
-console.log(taskBlock(true));
-console.log(taskBlock(false));
+console.log(getBudgetObject(400, 700, 900));
