@@ -1,0 +1,8 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2 (Or your preferred indentation)
+
+[*.js]
+editor.lineHeight = 1.5 (Or your preferred line spacing) 
