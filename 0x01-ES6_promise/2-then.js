@@ -5,9 +5,7 @@ function handleResponseFromAPI(promise) {
       status: 200,
       body: 'Success',
     };
-  }).catch(() => {
-    return new Error();
-  });
+  }).catch(() => new Error());
 }
 
 export default handleResponseFromAPI;
