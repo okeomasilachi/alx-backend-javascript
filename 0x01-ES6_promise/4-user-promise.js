@@ -1,5 +1,9 @@
-export default function signUpUser(firstName, lastName) => {
-  new Promise((resolve) => {
-    return resolve({ firstName, lastName });
+export default function signUpUser(firstName, lastName) {
+  /* eslint-disable-next-line no-unused-vars */
+  return new Promise((resolve, reject) => {
+    resolve({
+      firstName,
+      lastName,
+    });
   });
 }
