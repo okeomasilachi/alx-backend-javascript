@@ -1,6 +1,21 @@
-import Pricing from './4-pricing.js';
-import Currency from './3-currency.js';
+import Building from './5-building.js';
 
-const p = new Pricing(100, new Currency("EUR", "Euro"))
-console.log(p);
-console.log(p.displayFullPrice());
+const b = new Building(100);
+console.log(b);
+
+class TestBuilding extends Building {
+    constructor(sqft) {
+        super(sqft);
+    }
+
+    evacuationWarningMessage() {
+        return "Test Building must evacuate";
+    }
+}
+
+try {
+    new TestBuilding(200)
+}
+catch(err) {
+    console.log(err);
+}
