@@ -20,7 +20,7 @@ const cmd = readline.createInterface({
 cmd.question('Welcome to Holberton School, what is your name?\n', (name) => {
   console.log(`Your name is: ${name}!`);
   cmd.on('close', () => {
-    console.log('This important software is now closing\n');
+    console.log('This important software is now closing');
   });
   cmd.close();
 });
