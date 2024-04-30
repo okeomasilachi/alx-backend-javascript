@@ -19,13 +19,13 @@ const countStudents = (path) => new Promise((resolve, reject) => {
           fields[student[3]].students.push(student[0]);
         }
       }
-      let response = `Number of students: ${count}\n`;
+      console.log(`Number of students: ${count}`);
       for (const field in fields) {
         if (field) {
-          response += `Number of students in ${field}: ${fields[field].count}. List: ${fields[field].students.join(', ')}\n`;
+          console.log(`Number of students in ${field}: ${fields[field].count}. List: ${fields[field].students.join(', ')}`);
         }
       }
-      resolve(response.trim());
+      resolve(`Number of students: ${count}`);
     }
   });
 });
