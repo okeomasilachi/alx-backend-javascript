@@ -19,7 +19,7 @@ rl.on('line', (input) => {
   }
 });
 
-// Handle program termination
+// Handle program termination if input stream is not a TTY
 if (!process.stdin.isTTY) {
   rl.on('close', () => {
     console.log('This important software is now closing');
