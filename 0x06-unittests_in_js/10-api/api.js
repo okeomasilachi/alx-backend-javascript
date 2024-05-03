@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/cart/:id', validateIdParam, (req, res) => {
   const cartId = req.params.id;
 
-  res.send(`Payment methods for cart :${cartId}`);
+  res.send(`Payment methods for cart ${cartId}`);
 });
 
 app.get('/available_payments', (req, res) => {

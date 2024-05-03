@@ -57,7 +57,7 @@ describe('Index Page', () => {
           expect(response.statusCode).to.equal(200);
           expect(body).to.be.a('string');
           expect(body).to.contain(
-            'Payment methods for cart :2345'
+            'Payment methods for cart 2345'
           );
           done();
         });
