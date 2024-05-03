@@ -1,11 +1,10 @@
-const calculateNumber = require('./2-calcul_chai');
-
 var expect;
 import('chai').then(chai => {
   expect = chai.expect;
 }).catch(err => {
   console.error(err);
 });
+const calculateNumber = require('./2-calcul_chai');
 
 describe('calculateNumber', () => {
   describe('SUM operation', () => {
