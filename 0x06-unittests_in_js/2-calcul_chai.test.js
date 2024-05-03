@@ -1,4 +1,9 @@
 // var expect;
+// import('chai').then(chai => {
+//   expect = chai.expect;
+// }).catch(err => {
+//   console.error(err);
+// });
 const chai = require('chai');
 const expect = chai.expect;
 const calculateNumber = require('./2-calcul_chai');
